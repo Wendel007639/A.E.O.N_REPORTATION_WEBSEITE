@@ -37,7 +37,7 @@ const pillars = [
     title: "Gate Kernel",
     kicker: "Build / Lint / JSON / Surface",
     text:
-      "Technische Gates pruefen Stabilitaet. Fachlicher Proof entsteht erst, wenn Lauf, Artefakte, Learning und Speed konsistent sind.",
+      "Technische Gates prüfen Stabilitaet. Fachlicher Proof entsteht erst, wenn Lauf, Artefakte, Learning und Speed konsistent sind.",
     status: "CONTROLLED",
   },
   {

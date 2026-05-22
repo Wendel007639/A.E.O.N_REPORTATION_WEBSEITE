@@ -100,7 +100,7 @@ export default function DownloadsPage() {
 
           <div className="aeon-actions">
             <Link className="aeon-button aeon-button-primary" href="/proof">
-              Proof pruefen
+              Proof prüfen
             </Link>
             <Link className="aeon-button aeon-button-secondary" href="/methodik">
               Methodik lesen

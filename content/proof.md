@@ -4,7 +4,7 @@ Diese Seite ist die wichtigste Seite der A.E.O.N Reportation-Webseite.
 
 Sie muss zeigen:
 
-- Run-ID
+- Run ID
 - Run-Dir
 - INTELLIGENCE_STATUS
 - SMOKE_STATUS

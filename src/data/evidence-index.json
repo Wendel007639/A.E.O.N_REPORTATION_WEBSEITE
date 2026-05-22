@@ -72,7 +72,7 @@
       "content_status": "placeholder",
       "last_seen_at": "2026-05-22T12:22:38.556Z",
       "required_for_green": true,
-      "description": "Gate-Status mit FAILED_GATES."
+      "description": "Gate Status mit FAILED_GATES."
     },
     {
       "key": "evidence_brief",

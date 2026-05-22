@@ -48,7 +48,7 @@ const values = [
 const controlFlow = [
   ["INPUT", "Signale sammeln"],
   ["BIND", "Evidence anbinden"],
-  ["GATE", "technisch pruefen"],
+  ["GATE", "technisch prüfen"],
   ["PROOF", "fachlich bewerten"],
   ["DELIVER", "kontrolliert ausliefern"],
 ];

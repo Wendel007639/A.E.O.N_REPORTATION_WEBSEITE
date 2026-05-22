@@ -10,6 +10,7 @@ Wichtig:
 
 
 # Änderungen vornehmen:
-git add .
-git commit -m "Update AEON website"
+cd "/c/Dev/A.E.O.N Reportation Webseite"
+
+git pull --rebase origin main
 git push

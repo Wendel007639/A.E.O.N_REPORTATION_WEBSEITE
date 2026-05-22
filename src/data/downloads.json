@@ -22,7 +22,7 @@
         {
           "id": "latest-proof-bundle",
           "title": "Proof Artifact Bundle",
-          "description": "Paket aus Summary, Manifest, Smoke-Daten, Gate-Status und Evidence-Brief.",
+          "description": "Paket aus Summary, Manifest, Smoke-Daten, Gate Status und Evidence-Brief.",
           "format": "ZIP",
           "href": null,
           "source_path": "evidence/latest",
@@ -71,7 +71,7 @@
     {
       "id": "investor-pack",
       "title": "Investor-Unterlagen",
-      "description": "Onepager, technische Kurzfassung und investorentaugliche Erklaerung.",
+      "description": "Onepager, technische Kurzfassung und investorentaugliche Erklärung.",
       "items": [
         {
           "id": "investor-pack-placeholder",
@@ -89,7 +89,7 @@
     {
       "id": "technical-artifacts",
       "title": "Technische Artefakte",
-      "description": "JSONs, Manifest-Dateien, Gate-Status, Smoke Summary und Rohdaten.",
+      "description": "JSONs, Manifest-Dateien, Gate Status, Smoke Summary und Rohdaten.",
       "items": [
         {
           "id": "technical-artifacts-latest",

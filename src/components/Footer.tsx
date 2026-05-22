@@ -17,7 +17,7 @@ export default function Footer() {
           <h2>Echte Läufe. Echte Artefakte. Klare Reportation.</h2>
           <p>
             Diese Webseite ist die sichtbare Reportationsschicht für ProofKit,
-            Evidence-Briefs, Metriken, Gates und investorentaugliche Erklaerung.
+            Evidence-Briefs, Metriken, Gates und investorentaugliche Erklärung.
           </p>
         </section>
 
@@ -35,7 +35,7 @@ export default function Footer() {
         <section className="aeon-footer-panel aeon-footer-panel-compact">
           <span className="aeon-kicker">Status</span>
           <p>
-            Bis echte ProofKit-Daten angebunden sind, bleiben Proof-Aussagen
+            Bis echte ProofKit-Daten angebunden sind, bleiben Proof Aussagen
             bewusst als Platzhalter markiert.
           </p>
         </section>

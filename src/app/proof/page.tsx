@@ -138,7 +138,7 @@ const metricCards = [
   {
     label: "speed_total_seconds",
     value: display.speedSeconds,
-    detail: "Gesamtdauer aus Speed-Metriken."
+    detail: "Gesamtdauer aus Speed Metriken."
   },
   {
     label: "learning_evidence_count",
@@ -187,7 +187,7 @@ export default function ProofPage() {
           <h1 className="aeon-title">Proof ist kein Screenshot. Proof ist ein Lauf.</h1>
 
           <p className="aeon-lead">
-            Diese Seite zeigt Run-ID, Gates, Statuswerte, Learning, Speed und
+            Diese Seite zeigt Run ID, Gates, Statuswerte, Learning, Speed und
             Artefakte. Ein grüner Prozessruecksprung allein zaehlt nicht als
             Proof-Erfolg.
           </p>
@@ -203,13 +203,13 @@ export default function ProofPage() {
             <strong>{officialGreen ? "FULL-PROOF GRUEN" : "NOCH NICHT ALS GRUEN BEHAUPTEN"}</strong>
             <p>
               {latestProof.warning ??
-                "Echte Proof-Aussagen werden erst mit angebundenen Artefakten aktiviert."}
+                "Echte Proof Aussagen werden erst mit angebundenen Artefakten aktiviert."}
             </p>
           </div>
 
           <div className="aeon-actions">
             <Link className="aeon-button aeon-button-primary" href="/downloads">
-              Artefakte pruefen
+              Artefakte prüfen
             </Link>
             <Link className="aeon-button aeon-button-secondary" href="/methodik">
               Methodik lesen
@@ -252,7 +252,7 @@ export default function ProofPage() {
 
         <div className="aeon-proof-run-grid">
           <article className="aeon-proof-run-card">
-            <span>Run-ID</span>
+            <span>Run ID</span>
             <strong>{display.runId}</strong>
           </article>
 

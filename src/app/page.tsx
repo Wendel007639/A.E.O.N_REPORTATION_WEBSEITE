@@ -42,24 +42,24 @@ const gateLabel =
 
 const telemetryCards = [
   {
-    label: "Run-ID",
+    label: "Run ID",
     value: runIdLabel,
     detail: "Kommt später aus echten ProofKit-Artefakten."
   },
   {
-    label: "Gate-Status",
+    label: "Gate Status",
     value: gateLabel,
     detail: "Grün ist nur ein konsistenter Lauf mit fachlichen Gates."
   },
   {
     label: "Learning",
     value: latestProof.learning_visible ? "sichtbar" : "noch Platzhalter",
-    detail: "Learning-Metriken werden nicht erfunden."
+    detail: "Learning Metriken werden nicht erfunden."
   },
   {
     label: "Speed",
     value: latestProof.speed_visible ? "sichtbar" : "noch Platzhalter",
-    detail: "Speed-Metriken werden aus Artefakten gelesen."
+    detail: "Speed Metriken werden aus Artefakten gelesen."
   }
 ];
 
@@ -74,7 +74,7 @@ const pillars = [
   },
   {
     title: "Schutz",
-    text: "Keine AGI-, Bewusstseins- oder Hype-Behauptungen ohne Beweis."
+    text: "Keine AGI Behauptungen, Bewusstseinsbehauptungen oder Hype Behauptungen ohne Beweis."
   },
   {
     title: "Vertrauen",
@@ -82,7 +82,7 @@ const pillars = [
   },
   {
     title: "Verbundenheit",
-    text: "Proof, Downloads, Roadmap und Investor-Kommunikation greifen zusammen."
+    text: "Proof, Downloads, Roadmap und Investorenkommunikation greifen zusammen."
   }
 ];
 
@@ -90,11 +90,11 @@ const routeCards = [
   {
     href: "/proof",
     label: "Proof ansehen",
-    text: "Run-ID, Gates, Statuswerte, Learning, Speed und Artefakte."
+    text: "Run ID, Gates, Statuswerte, Learning, Speed und Artefakte."
   },
   {
     href: "/downloads",
-    label: "Downloads pruefen",
+    label: "Downloads prüfen",
     text: "Evidence-Briefs, JSONs, Manifest-Dateien und Investor-Unterlagen."
   },
   {
@@ -127,7 +127,7 @@ export default function HomePage() {
 
           <p className="aeon-lead">
             A.E.O.N ist ein lokal laufendes, prüfbares ProofKit-System mit
-            reproduzierbaren Artefakten, sichtbarem Lernen, Speed-Metriken und
+            reproduzierbaren Artefakten, sichtbarem Lernen, Speed Metriken und
             grünen Gates.
           </p>
 
@@ -227,7 +227,7 @@ export default function HomePage() {
       <section className="aeon-home-section">
         <div className="aeon-section-heading">
           <span className="aeon-kicker">A.E.O.N Leitwerte</span>
-          <h2>Technische Wirkung braucht Vertrauen, nicht Lautstaerke.</h2>
+          <h2>Technische Wirkung braucht Vertrauen, nicht Lautstärke.</h2>
         </div>
 
         <div className="aeon-pillar-grid">

@@ -54,7 +54,7 @@ const launchFlow = [
   ["SCAN", "Lage erfassen", "Kontext stabilisieren"],
   ["ROUTE", "System fuehren", "Nexus-Pfad setzen"],
   ["GUARD", "Design sichern", "Bestehendes schuetzen"],
-  ["VERIFY", "Gates pruefen", "Build und Lint"],
+  ["VERIFY", "Gates prüfen", "Build und Lint"],
   ["REPORT", "Status liefern", "kein Fake-Grün"],
 ];
 

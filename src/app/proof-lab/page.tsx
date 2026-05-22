@@ -51,11 +51,11 @@ const evidenceLanes = [
 ];
 
 const telemetry = [
-  ["BUILD", "technisch pruefen", "stabiler Prozess"],
-  ["LINT", "Code pruefen", "saubere Flaeche"],
-  ["JSON", "Daten pruefen", "lesbare Struktur"],
-  ["SURFACE", "UI pruefen", "kein Designbruch"],
-  ["PROOF", "fachlich pruefen", "kein Fake-Grün"],
+  ["BUILD", "technisch prüfen", "stabiler Prozess"],
+  ["LINT", "Code prüfen", "saubere Flaeche"],
+  ["JSON", "Daten prüfen", "lesbare Struktur"],
+  ["SURFACE", "UI prüfen", "kein Designbruch"],
+  ["PROOF", "fachlich prüfen", "kein Fake-Grün"],
 ];
 
 const guardRules = [
