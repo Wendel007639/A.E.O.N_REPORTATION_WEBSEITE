@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | A.E.O.N Reportation"
   },
   description:
-    "Prüfbare Reportations- und Beweis-Webseite für A.E.O.N, ProofKit, Evidence-Briefs, Metriken und Artefakte.",
+    "Prüfbare Reportations- und Beweis-Webseite für A.E.O.N, ProofKit, Evidence Briefs, Metriken und Artefakte.",
   applicationName: "A.E.O.N Reportation Webseite"
 };
 

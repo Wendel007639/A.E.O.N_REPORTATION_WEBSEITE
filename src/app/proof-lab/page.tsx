@@ -13,7 +13,7 @@ const evidenceLanes = [
     title: "Evidence Intake",
     signal: "FILES / STRUCTURE / BINDING",
     text:
-      "Die Evidence-Struktur ist sichtbar angebunden. Platzhalter bleiben aber Platzhalter, bis echte Artefakte den fachlichen Beweis tragen.",
+      "Die Evidence Struktur ist sichtbar angebunden. Platzhalter bleiben aber Platzhalter, bis echte Artefakte den fachlichen Beweis tragen.",
     state: "BOUND",
   },
   {

@@ -3,7 +3,7 @@
   "status": "evidence-bound-not-verified",
   "proof_level": "placeholder",
   "is_real_proof": false,
-  "warning": "Evidence-Struktur angebunden. Noch kein echter grüner Proof erkannt oder Artefakte sind Platzhalter.",
+  "warning": "Evidence Struktur angebunden. Noch kein echter grüner Proof erkannt oder Artefakte sind Platzhalter.",
   "run_id": null,
   "run_dir": null,
   "created_at": null,
@@ -137,7 +137,7 @@
     "real_artifacts_connected": false,
     "created_by_patch": "patch-8-fixed",
     "notes": [
-      "Evidence-Struktur wurde angebunden.",
+      "Evidence Struktur wurde angebunden.",
       "Placeholder-Dateien werden nicht als echter Proof gewertet.",
       "Grün nur bei Artefakten, Gates, Learning und Speed."
     ]

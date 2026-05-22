@@ -81,9 +81,9 @@ export default function DownloadsPage() {
           <h1 className="aeon-title">Downloads für Beweise, nicht für Behauptungen.</h1>
 
           <p className="aeon-lead">
-            Diese Seite sammelt Evidence-Briefs, Proof-JSONs, Manifest-Dateien,
+            Diese Seite sammelt Evidence Briefs, Proof-JSONs, Manifestdateien,
             Smoke Summary, Gate Status, Screenshots, technische Artefakte und
-            Investor-Unterlagen. Freigeschaltet wird nur, was wirklich belegt ist.
+            Investorenunterlagen. Freigeschaltet wird nur, was wirklich belegt ist.
           </p>
 
           <div

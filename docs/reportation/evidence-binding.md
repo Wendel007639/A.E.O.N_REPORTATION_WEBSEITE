@@ -1,6 +1,6 @@
 # Evidence Binding
 
-Patch 8 bindet die lokale Evidence-Struktur an die Webseite an.
+Patch 8 bindet die lokale Evidence Struktur an die Webseite an.
 
 Quelle:
 evidence/latest

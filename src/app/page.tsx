@@ -25,7 +25,7 @@ const officialResult =
 
 const proofStage = officialResult
   ? "VERIFIZIERTER FULL-PROOF"
-  : "PROOF-ANBINDUNG VORBEREITET";
+  : "PROOF ANBINDUNG VORBEREITET";
 
 const proofStatusLabel = officialResult
   ? "BESTANDEN"
@@ -95,12 +95,12 @@ const routeCards = [
   {
     href: "/downloads",
     label: "Downloads prüfen",
-    text: "Evidence-Briefs, JSONs, Manifest-Dateien und Investor-Unterlagen."
+    text: "Evidence Briefs, JSONs, Manifestdateien und Investorenunterlagen."
   },
   {
     href: "/investoren",
     label: "Investorensicht",
-    text: "Technischer Demonstrator-Status ohne Hype-Verkauf."
+    text: "Technischer Demonstratorstatus ohne Hypeverkauf."
   }
 ];
 
@@ -122,11 +122,11 @@ export default function HomePage() {
           <div className="aeon-pill">A.E.O.N Reportation Webseite</div>
 
           <h1 className="aeon-title">
-            Prüfbare Reportation für ein echtes ProofKit-System.
+            Prüfbare Reportation für ein echtes ProofKit System.
           </h1>
 
           <p className="aeon-lead">
-            A.E.O.N ist ein lokal laufendes, prüfbares ProofKit-System mit
+            A.E.O.N ist ein lokal laufendes, prüfbares ProofKit System mit
             reproduzierbaren Artefakten, sichtbarem Lernen, Speed Metriken und
             grünen Gates.
           </p>
@@ -188,7 +188,7 @@ export default function HomePage() {
 
       <section className="aeon-home-section">
         <div className="aeon-section-heading">
-          <span className="aeon-kicker">Aktueller Proof-Status</span>
+          <span className="aeon-kicker">Aktueller Proof Status</span>
           <h2>Die Startseite behauptet nur, was Daten hergeben.</h2>
           <p>
             Diese Seite ist die Eingangsschicht für Prüfer, Investoren und

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "evidence-bound-not-verified",
-  "warning": "Evidence-Struktur ist angebunden. Offizielle Downloads bleiben gesperrt.",
+  "warning": "Evidence Struktur ist angebunden. Offizielle Downloads bleiben gesperrt.",
   "groups": [
     {
       "id": "official-full-proof",
@@ -70,13 +70,13 @@
     },
     {
       "id": "investor-pack",
-      "title": "Investor-Unterlagen",
+      "title": "Investorenunterlagen",
       "description": "Onepager, technische Kurzfassung und investorentaugliche Erklärung.",
       "items": [
         {
           "id": "investor-pack-placeholder",
           "title": "Investor Pack",
-          "description": "Geplantes Paket aus Onepager, Proof-Status, Roadmap und Kontakttext.",
+          "description": "Geplantes Paket aus Onepager, Proof Status, Roadmap und Kontakttext.",
           "format": "PDF/ZIP",
           "href": null,
           "source_path": "public/downloads/investor-pack",
@@ -89,7 +89,7 @@
     {
       "id": "technical-artifacts",
       "title": "Technische Artefakte",
-      "description": "JSONs, Manifest-Dateien, Gate Status, Smoke Summary und Rohdaten.",
+      "description": "JSONs, Manifestdateien, Gate Status, Smoke Summary und Rohdaten.",
       "items": [
         {
           "id": "technical-artifacts-latest",

@@ -59,7 +59,7 @@ const proof = [
   {
     title: "Evidence Binding",
     value: "BOUND",
-    text: "Die Evidence-Struktur ist angebunden, bleibt aber inhaltlich streng bewertet.",
+    text: "Die Evidence Struktur ist angebunden, bleibt aber inhaltlich streng bewertet.",
   },
   {
     title: "Official Green",

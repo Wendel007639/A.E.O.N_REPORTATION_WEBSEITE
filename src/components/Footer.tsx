@@ -17,7 +17,7 @@ export default function Footer() {
           <h2>Echte Läufe. Echte Artefakte. Klare Reportation.</h2>
           <p>
             Diese Webseite ist die sichtbare Reportationsschicht für ProofKit,
-            Evidence-Briefs, Metriken, Gates und investorentaugliche Erklärung.
+            Evidence Briefs, Metriken, Gates und investorentaugliche Erklärung.
           </p>
         </section>
 
