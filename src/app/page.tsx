@@ -44,7 +44,7 @@ const telemetryCards = [
   {
     label: "Run ID",
     value: runIdLabel,
-    detail: "Kommt später aus echten ProofKit-Artefakten."
+    detail: "Kommt später aus echten ProofKit Artefakten."
   },
   {
     label: "Gate Status",
