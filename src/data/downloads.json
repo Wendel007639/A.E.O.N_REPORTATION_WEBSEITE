@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "status": "evidence-bound-not-verified",
+  "warning": "Evidence-Struktur ist angebunden. Offizielle Downloads bleiben gesperrt.",
+  "groups": [
+    {
+      "id": "official-full-proof",
+      "title": "Letzter offizieller Full-Proof",
+      "description": "Zentrale Download-Gruppe fuer den neuesten bestandenen Full-Proof.",
+      "items": [
+        {
+          "id": "latest-evidence-brief",
+          "title": "Evidence Brief",
+          "description": "Menschlich lesbare Kurzreportation des neuesten offiziellen Proof-Laufs.",
+          "format": "MD/PDF",
+          "href": null,
+          "source_path": "evidence/latest/evidence_brief.md",
+          "available": false,
+          "requires_real_proof": true,
+          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+        },
+        {
+          "id": "latest-proof-bundle",
+          "title": "Proof Artifact Bundle",
+          "description": "Paket aus Summary, Manifest, Smoke-Daten, Gate-Status und Evidence-Brief.",
+          "format": "ZIP",
+          "href": null,
+          "source_path": "evidence/latest",
+          "available": false,
+          "requires_real_proof": true,
+          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+        }
+      ]
+    },
+    {
+      "id": "passed-runs",
+      "title": "Fruehere bestandene Laeufe",
+      "description": "Archiv fuer bestandene Runs mit reproduzierbaren Artefakten.",
+      "items": [
+        {
+          "id": "passed-runs-index",
+          "title": "Passed Runs Index",
+          "description": "Index frueherer bestandener Laeufe.",
+          "format": "JSON",
+          "href": null,
+          "source_path": "evidence/runs",
+          "available": false,
+          "requires_real_proof": true,
+          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+        }
+      ]
+    },
+    {
+      "id": "failed-runs",
+      "title": "Fehlerlaeufe / Debug-Historie",
+      "description": "Fehler werden nicht versteckt. Sie zeigen Entwicklung und Seriositaet.",
+      "items": [
+        {
+          "id": "failed-runs-index",
+          "title": "Failed Runs Index",
+          "description": "Index dokumentierter Fehlerlaeufe und Debug-Historie.",
+          "format": "JSON/MD",
+          "href": null,
+          "source_path": "evidence/failed-runs",
+          "available": false,
+          "requires_real_proof": false,
+          "note": "Wird spaeter mit Debug-Historie gefuellt."
+        }
+      ]
+    },
+    {
+      "id": "investor-pack",
+      "title": "Investor-Unterlagen",
+      "description": "Onepager, technische Kurzfassung und investorentaugliche Erklaerung.",
+      "items": [
+        {
+          "id": "investor-pack-placeholder",
+          "title": "Investor Pack",
+          "description": "Geplantes Paket aus Onepager, Proof-Status, Roadmap und Kontakttext.",
+          "format": "PDF/ZIP",
+          "href": null,
+          "source_path": "public/downloads/investor-pack",
+          "available": false,
+          "requires_real_proof": false,
+          "note": "Wird nach Proof- und Downloads-Anbindung erstellt."
+        }
+      ]
+    },
+    {
+      "id": "technical-artifacts",
+      "title": "Technische Artefakte",
+      "description": "JSONs, Manifest-Dateien, Gate-Status, Smoke Summary und Rohdaten.",
+      "items": [
+        {
+          "id": "technical-artifacts-latest",
+          "title": "Latest Technical Artifacts",
+          "description": "Technischer Artefakt-Satz des neuesten Proof-Laufs.",
+          "format": "JSON/ENV/MD",
+          "href": null,
+          "source_path": "evidence/latest",
+          "available": false,
+          "requires_real_proof": true,
+          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+        }
+      ]
+    }
+  ]
+}

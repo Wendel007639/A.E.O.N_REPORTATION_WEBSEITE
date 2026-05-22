@@ -1,0 +1,13 @@
+export default function Page() {
+  return (
+    <main>
+      <section className="aeon-shell">
+        <div className="aeon-card">
+          <div className="aeon-kicker">A.E.O.N</div>
+          <h1>Architektur</h1>
+          <p className="aeon-lead">Systemuebersicht, Docker-Umgebung, ProofKit, Menuefuehrung, Datenfluss und Report-Bundle.</p>
+        </div>
+      </section>
+    </main>
+  );
+}

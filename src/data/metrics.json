@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "latest_run_id": null,
+  "learning": {
+    "visible": false,
+    "evidence_count": null,
+    "items": []
+  },
+  "speed": {
+    "visible": false,
+    "total_seconds": null,
+    "items": []
+  }
+}

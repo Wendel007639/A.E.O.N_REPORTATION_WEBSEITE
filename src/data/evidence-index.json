@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-22T12:22:38.556Z",
+  "source_dir": "evidence/latest",
+  "public_dir": "public/downloads",
+  "artifacts": [
+    {
+      "key": "intelligence_summary",
+      "file": "intelligence_summary.json",
+      "path": "evidence/latest/intelligence_summary.json",
+      "href": "/downloads/proof-artifacts/latest/intelligence_summary.json",
+      "physical_exists": true,
+      "exists": false,
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "content_status": "placeholder",
+      "last_seen_at": "2026-05-22T12:22:38.556Z",
+      "required_for_green": true,
+      "description": "Zusammenfassung des Intelligenz-Tests."
+    },
+    {
+      "key": "intelligence_manifest",
+      "file": "intelligence_manifest.json",
+      "path": "evidence/latest/intelligence_manifest.json",
+      "href": "/downloads/proof-artifacts/latest/intelligence_manifest.json",
+      "physical_exists": true,
+      "exists": false,
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "content_status": "placeholder",
+      "last_seen_at": "2026-05-22T12:22:38.556Z",
+      "required_for_green": true,
+      "description": "Manifest fuer reproduzierbare ProofKit-Auswertung."
+    },
+    {
+      "key": "proof_smoke_summary",
+      "file": "proof_smoke_summary.json",
+      "path": "evidence/latest/proof_smoke_summary.json",
+      "href": "/downloads/proof-artifacts/latest/proof_smoke_summary.json",
+      "physical_exists": true,
+      "exists": false,
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "content_status": "placeholder",
+      "last_seen_at": "2026-05-22T12:22:38.556Z",
+      "required_for_green": true,
+      "description": "Smoke-Summary fuer ProofKit."
+    },
+    {
+      "key": "proof_smoke_raw",
+      "file": "proof_smoke_raw.json",
+      "path": "evidence/latest/proof_smoke_raw.json",
+      "href": "/downloads/proof-artifacts/latest/proof_smoke_raw.json",
+      "physical_exists": true,
+      "exists": false,
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "content_status": "placeholder",
+      "last_seen_at": "2026-05-22T12:22:38.556Z",
+      "required_for_green": true,
+      "description": "Rohdaten der Smoke-Pruefung."
+    },
+    {
+      "key": "proof_gate_status",
+      "file": "proof_gate_status.env",
+      "path": "evidence/latest/proof_gate_status.env",
+      "href": "/downloads/proof-artifacts/latest/proof_gate_status.env",
+      "physical_exists": true,
+      "exists": false,
+      "bytes": 33,
+      "sha256": "5ece9bb9011bdd5fa6ea4e8fa22391658fe2f20fe1931cc50b7a292fef443e5d",
+      "content_status": "placeholder",
+      "last_seen_at": "2026-05-22T12:22:38.556Z",
+      "required_for_green": true,
+      "description": "Gate-Status mit FAILED_GATES."
+    },
+    {
+      "key": "evidence_brief",
+      "file": "evidence_brief.md",
+      "path": "evidence/latest/evidence_brief.md",
+      "href": "/downloads/evidence-briefs/latest-evidence-brief.md",
+      "physical_exists": true,
+      "exists": false,
+      "bytes": 68,
+      "sha256": "7da3aeabb15d783a6ac135aebd48ea24db27f01d90ec1f70f93ce8077139ab22",
+      "content_status": "placeholder",
+      "last_seen_at": "2026-05-22T12:22:38.556Z",
+      "required_for_green": true,
+      "description": "Menschlich lesbarer Evidence-Brief."
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "physical_existing": 6,
+    "connected": 0,
+    "placeholder": 6,
+    "missing": 0,
+    "official_green": false
+  }
+}

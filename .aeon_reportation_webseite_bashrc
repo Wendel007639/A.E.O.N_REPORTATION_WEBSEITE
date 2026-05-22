@@ -1,0 +1,35 @@
+set +e
+set +H
+set +o pipefail 2>/dev/null || true
+stty -ixon 2>/dev/null || true
+export AEON_WEB_DIR="/c/Dev/A.E.O.N Reportation Webseite"
+bind -f "/c/Dev/A.E.O.N Reportation Webseite/.aeon_reportation_webseite_inputrc" 2>/dev/null || true
+bind 'set enable-bracketed-paste on' 2>/dev/null || true
+cd "/c/Dev/A.E.O.N Reportation Webseite"
+alias webcd='cd "/c/Dev/A.E.O.N Reportation Webseite"'
+alias cls='clear'
+alias ll='ls -la'
+alias tree1='find . -maxdepth 2 -type d | sort'
+alias webdev='npm run dev'
+alias webbuild='npm run build'
+alias weblint='npm run lint'
+alias webstart='npm run start'
+alias webstatus='git status --short 2>/dev/null || true'
+alias webproof='cat src/data/latest-proof.json 2>/dev/null | head -80'
+clear
+printf '\033[96m==============================================\033[0m\n'
+printf '\033[96m A.E.O.N Reportation Webseite Kern bereit\033[0m\n'
+printf '\033[96m==============================================\033[0m\n\n'
+echo "Pfad: /c/Dev/A.E.O.N Reportation Webseite"
+echo
+echo "Befehle:"
+echo "  webdev     = Entwicklungsserver starten"
+echo "  webbuild   = Produktionsbuild pruefen"
+echo "  weblint    = Lint pruefen"
+echo "  webstatus  = Git Status"
+echo "  webproof   = latest-proof.json anzeigen"
+echo
+if [ -f package.json ]; then echo "package.json gefunden."; else echo "WARNUNG: package.json fehlt."; fi
+if [ -d src/app ]; then echo "src/app gefunden."; else echo "WARNUNG: src/app fehlt."; fi
+if [ -d evidence ]; then echo "evidence Ordner gefunden."; else echo "WARNUNG: evidence Ordner fehlt."; fi
+echo

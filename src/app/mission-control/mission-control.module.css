@@ -1,0 +1,951 @@
+.missionPage {
+  --cyan: #00eaff;
+  --blue: #1277ff;
+  --violet: #7357ff;
+  --text: #ecfbff;
+  --muted: rgba(219, 247, 255, 0.69);
+  --line: rgba(0, 234, 255, 0.34);
+  --panel: rgba(2, 13, 31, 0.78);
+
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 234, 255, 0.34), transparent 28rem),
+    radial-gradient(circle at 50% 44%, rgba(18, 119, 255, 0.29), transparent 46rem),
+    radial-gradient(circle at 12% 20%, rgba(0, 234, 255, 0.16), transparent 28rem),
+    radial-gradient(circle at 88% 24%, rgba(115, 87, 255, 0.16), transparent 29rem),
+    linear-gradient(180deg, #00040a 0%, #031129 54%, #020711 100%);
+  isolation: isolate;
+}
+
+.missionPage::before {
+  content: "";
+  position: absolute;
+  inset: -24%;
+  z-index: -7;
+  pointer-events: none;
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(0, 234, 255, 0.15) 0deg 1deg,
+      transparent 1deg 8deg
+    );
+  opacity: 0.14;
+  animation: spin 42s linear infinite;
+}
+
+.gridLayer,
+.scanLayer,
+.starLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.gridLayer {
+  z-index: -6;
+  background:
+    linear-gradient(rgba(0, 234, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 234, 255, 0.055) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 78%);
+}
+
+.starLayer {
+  z-index: -5;
+  background-image:
+    radial-gradient(circle, rgba(236, 251, 255, 0.42) 0 1px, transparent 1px),
+    radial-gradient(circle, rgba(0, 234, 255, 0.34) 0 1px, transparent 1px);
+  background-size: 97px 121px, 151px 109px;
+  opacity: 0.34;
+}
+
+.scanLayer {
+  z-index: -4;
+  height: 20rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 234, 255, 0.08),
+    transparent
+  );
+  animation: scan 7s ease-in-out infinite;
+}
+
+.hero {
+  width: min(1520px, calc(100% - clamp(1.2rem, 4vw, 5rem)));
+  min-height: min(920px, calc(100vh - 1rem));
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 6.5rem) 0 clamp(3rem, 7vw, 7rem);
+  display: grid;
+  grid-template-columns: minmax(19rem, 0.9fr) minmax(40rem, 1.45fr);
+  gap: clamp(2rem, 5vw, 5.5rem);
+  align-items: center;
+}
+
+.copy {
+  position: relative;
+  z-index: 5;
+}
+
+.eyebrow,
+.sectionHead p,
+.guardTitle p {
+  margin: 0 0 1rem;
+  color: var(--cyan);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  text-shadow: 0 0 16px rgba(0, 234, 255, 0.82);
+}
+
+.copy h1,
+.sectionHead h2,
+.guardTitle h2 {
+  margin: 0;
+  font-weight: 950;
+  line-height: 0.92;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.copy h1 {
+  max-width: 13ch;
+  font-size: clamp(3.35rem, 8vw, 8.2rem);
+  text-shadow:
+    0 0 24px rgba(0, 234, 255, 0.44),
+    0 0 76px rgba(18, 119, 255, 0.42);
+}
+
+.lead {
+  max-width: 44rem;
+  margin: 1.55rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.45vw, 1.24rem);
+  line-height: 1.78;
+}
+
+.commandLock {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem 1rem 1rem 1.15rem;
+  border: 1px solid rgba(0, 234, 255, 0.24);
+  background:
+    linear-gradient(90deg, rgba(0, 234, 255, 0.15), transparent 70%),
+    linear-gradient(90deg, transparent, rgba(115, 87, 255, 0.09)),
+    rgba(0, 7, 18, 0.76);
+  box-shadow:
+    inset 0 0 30px rgba(0, 234, 255, 0.1),
+    0 0 34px rgba(0, 234, 255, 0.11);
+  clip-path: polygon(3% 0, 100% 0, 100% 78%, 96% 100%, 0 100%, 0 22%);
+}
+
+.commandLock::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--cyan);
+  box-shadow: 0 0 22px var(--cyan);
+}
+
+.commandLock span,
+.commandLock strong {
+  display: inline-flex;
+  margin-right: 0.7rem;
+  color: var(--cyan);
+  font-size: 0.75rem;
+  font-weight: 950;
+  letter-spacing: 0.18em;
+}
+
+.commandLock strong {
+  color: #b9adff;
+  text-shadow: 0 0 16px rgba(115, 87, 255, 0.8);
+}
+
+.commandLock p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.7rem;
+}
+
+.actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0 1.2rem;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(0, 234, 255, 0.18), rgba(18, 119, 255, 0.23)),
+    rgba(2, 15, 34, 0.76);
+  box-shadow:
+    inset 0 0 18px rgba(0, 234, 255, 0.16),
+    0 0 28px rgba(0, 234, 255, 0.14);
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+}
+
+.missionVisual {
+  position: relative;
+  min-height: clamp(42rem, 62vw, 56rem);
+}
+
+.coreStage {
+  position: absolute;
+  inset: 0 11%;
+  display: grid;
+  place-items: center;
+  perspective: 1100px;
+}
+
+.energyField {
+  position: absolute;
+  width: min(59vw, 53rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(0, 234, 255, 0.58) 0 0.55rem, transparent 0.72rem),
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(0, 234, 255, 0.6) 0deg 1deg,
+      transparent 1deg 8deg
+    );
+  filter: drop-shadow(0 0 44px rgba(0, 234, 255, 0.48));
+  mask-image: radial-gradient(circle, transparent 0 12%, black 15% 58%, transparent 73%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.ringAlpha,
+.ringBeta,
+.ringGamma {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 234, 255, 0.52);
+  box-shadow:
+    inset 0 0 36px rgba(0, 234, 255, 0.15),
+    0 0 40px rgba(18, 119, 255, 0.25);
+}
+
+.ringAlpha {
+  width: min(46vw, 39rem);
+  aspect-ratio: 1;
+  animation: spin 22s linear infinite;
+}
+
+.ringBeta {
+  width: min(37vw, 31rem);
+  aspect-ratio: 1;
+  border-style: dashed;
+  animation: reverseSpin 28s linear infinite;
+}
+
+.ringGamma {
+  width: min(27vw, 22.5rem);
+  aspect-ratio: 1;
+  border-color: rgba(255, 255, 255, 0.52);
+  animation: spin 16s linear infinite;
+}
+
+.floorGrid {
+  position: absolute;
+  bottom: 6%;
+  width: 112%;
+  height: 35%;
+  transform: rotateX(72deg);
+  transform-origin: center bottom;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at center, rgba(0, 234, 255, 0.29), transparent 58%),
+    repeating-radial-gradient(ellipse at center, rgba(0, 234, 255, 0.4) 0 1px, transparent 2px 28px),
+    linear-gradient(90deg, transparent 49%, rgba(0, 234, 255, 0.35) 50%, transparent 51%);
+  box-shadow:
+    0 0 68px rgba(0, 234, 255, 0.33),
+    inset 0 0 58px rgba(18, 119, 255, 0.33);
+  opacity: 0.78;
+}
+
+.core {
+  position: relative;
+  width: min(32vw, 27.2rem);
+  min-width: 19.5rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 234, 255, 0.64);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(0, 234, 255, 0.28), transparent 30%),
+    radial-gradient(circle, rgba(2, 9, 22, 0.18), rgba(1, 8, 20, 0.96) 64%),
+    rgba(1, 8, 20, 0.94);
+  box-shadow:
+    inset 0 0 42px rgba(0, 234, 255, 0.26),
+    inset 0 0 124px rgba(18, 119, 255, 0.18),
+    0 0 84px rgba(0, 234, 255, 0.45);
+}
+
+.core::before {
+  content: "";
+  position: absolute;
+  inset: 9%;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.68);
+  box-shadow:
+    0 0 24px rgba(255, 255, 255, 0.43),
+    0 0 44px rgba(0, 234, 255, 0.5);
+  opacity: 0.54;
+}
+
+.tower {
+  position: absolute;
+  top: 16%;
+  width: 39%;
+  aspect-ratio: 0.92;
+  border: 2px solid var(--cyan);
+  clip-path: polygon(50% 0, 86% 20%, 78% 78%, 50% 100%, 22% 78%, 14% 20%);
+  box-shadow:
+    inset 0 0 22px rgba(0, 234, 255, 0.34),
+    0 0 30px rgba(0, 234, 255, 0.6);
+}
+
+.tower::before {
+  content: "";
+  position: absolute;
+  inset: 18% 22% 20%;
+  border: 2px solid rgba(0, 234, 255, 0.72);
+  clip-path: inherit;
+}
+
+.tower span {
+  position: absolute;
+  width: 0.42rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 16px var(--cyan);
+}
+
+.tower span:nth-child(1) {
+  left: 50%;
+  top: 14%;
+  transform: translateX(-50%);
+}
+
+.tower span:nth-child(2) {
+  left: 29%;
+  top: 34%;
+}
+
+.tower span:nth-child(3) {
+  right: 29%;
+  top: 34%;
+}
+
+.tower span:nth-child(4) {
+  left: 37%;
+  bottom: 24%;
+}
+
+.tower span:nth-child(5) {
+  right: 37%;
+  bottom: 24%;
+  background: #b9adff;
+  box-shadow: 0 0 16px rgba(185, 173, 255, 0.95);
+}
+
+.coreText {
+  position: absolute;
+  bottom: 25%;
+  display: grid;
+  gap: 0.35rem;
+  text-align: center;
+}
+
+.coreText span {
+  font-size: clamp(2.1rem, 4vw, 4.4rem);
+  font-weight: 950;
+  letter-spacing: 0.18em;
+  line-height: 0.9;
+  text-shadow:
+    0 0 18px rgba(0, 234, 255, 0.56),
+    0 0 38px rgba(18, 119, 255, 0.48);
+}
+
+.coreText strong {
+  color: var(--cyan);
+  font-size: 0.68rem;
+  letter-spacing: 0.38em;
+  text-indent: 0.38em;
+}
+
+.coreDock {
+  position: absolute;
+  bottom: 8%;
+  display: flex;
+  max-width: 92%;
+  gap: 0.34rem;
+  padding: 0.55rem;
+  border: 1px solid rgba(0, 234, 255, 0.25);
+  background: rgba(0, 7, 18, 0.8);
+  clip-path: polygon(5% 0, 95% 0, 100% 30%, 100% 72%, 94% 100%, 6% 100%, 0 72%, 0 30%);
+}
+
+.coreDock i {
+  padding: 0.35rem 0.42rem;
+  color: rgba(232, 251, 255, 0.84);
+  font-size: clamp(0.44rem, 0.62vw, 0.6rem);
+  font-style: normal;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  border-left: 1px solid rgba(0, 234, 255, 0.23);
+}
+
+.coreDock i:first-child {
+  border-left: 0;
+}
+
+.hexTop,
+.hexLeft,
+.hexRight,
+.hexBottomLeft,
+.hexBottomRight {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: clamp(4rem, 7vw, 6.7rem);
+  aspect-ratio: 1.14;
+  color: var(--cyan);
+  font-size: 0.7rem;
+  font-weight: 950;
+  letter-spacing: 0.12em;
+  border: 1px solid rgba(0, 234, 255, 0.62);
+  background:
+    linear-gradient(135deg, rgba(0, 234, 255, 0.14), rgba(18, 119, 255, 0.1)),
+    rgba(2, 10, 24, 0.88);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  box-shadow:
+    inset 0 0 24px rgba(0, 234, 255, 0.18),
+    0 0 28px rgba(0, 234, 255, 0.31);
+}
+
+.hexTop {
+  top: 8%;
+}
+
+.hexLeft {
+  left: 5%;
+  top: 42%;
+}
+
+.hexRight {
+  right: 5%;
+  top: 42%;
+}
+
+.hexBottomLeft {
+  left: 17%;
+  bottom: 14%;
+  color: #b9adff;
+}
+
+.hexBottomRight {
+  right: 17%;
+  bottom: 14%;
+}
+
+.controlStack {
+  position: absolute;
+  top: 14%;
+  z-index: 4;
+  width: clamp(11rem, 15vw, 15.5rem);
+  display: grid;
+  gap: 1rem;
+}
+
+.leftStack {
+  left: 0;
+}
+
+.rightStack {
+  right: 0;
+}
+
+.controlCard {
+  position: relative;
+  min-height: 8.25rem;
+  padding: 1rem 1rem 0.85rem;
+  color: var(--cyan);
+  border: 1px solid rgba(0, 234, 255, 0.45);
+  background:
+    linear-gradient(90deg, rgba(0, 234, 255, 0.14), transparent),
+    rgba(1, 9, 23, 0.83);
+  clip-path: polygon(9% 0, 100% 0, 100% 76%, 91% 100%, 0 100%, 0 24%);
+  box-shadow:
+    inset 0 0 20px rgba(0, 234, 255, 0.15),
+    0 0 27px rgba(0, 234, 255, 0.18);
+  animation: floatPanel 4.8s ease-in-out infinite;
+}
+
+.controlCard:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.controlCard:nth-child(3) {
+  animation-delay: 0.32s;
+}
+
+.controlCard::before {
+  content: "";
+  position: absolute;
+  inset: 0.38rem;
+  pointer-events: none;
+  border: 1px solid rgba(0, 234, 255, 0.24);
+  clip-path: inherit;
+}
+
+.controlCard strong,
+.controlCard span {
+  display: block;
+  text-transform: uppercase;
+}
+
+.controlCard strong {
+  margin-bottom: 0.75rem;
+  font-size: 0.92rem;
+  letter-spacing: 0.14em;
+}
+
+.controlCard span {
+  color: rgba(210, 249, 255, 0.83);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  line-height: 1.75;
+}
+
+.controlCard i {
+  position: absolute;
+  left: 1rem;
+  right: 4.5rem;
+  bottom: 1rem;
+  height: 0.48rem;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 234, 255, 0.95) 0 2px,
+      transparent 2px 5px
+    );
+  box-shadow: 0 0 13px rgba(0, 234, 255, 0.74);
+}
+
+.controlCard small {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.78rem;
+  color: rgba(232, 251, 255, 0.94);
+  font-size: 0.72rem;
+  font-weight: 950;
+}
+
+.stackSection,
+.flowSection,
+.guardSection {
+  width: min(1520px, calc(100% - clamp(1.2rem, 4vw, 5rem)));
+  margin: 0 auto;
+  padding-bottom: clamp(3.5rem, 7vw, 7rem);
+}
+
+.sectionHead {
+  max-width: 64rem;
+  margin-bottom: 1.7rem;
+}
+
+.sectionHead h2,
+.guardTitle h2 {
+  font-size: clamp(2.4rem, 5vw, 5.6rem);
+}
+
+.stackGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stackCard {
+  position: relative;
+  min-height: 25rem;
+  overflow: hidden;
+  padding: 1.1rem;
+  border: 1px solid rgba(0, 234, 255, 0.28);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 234, 255, 0.18), transparent 39%),
+    linear-gradient(180deg, rgba(4, 20, 45, 0.88), rgba(1, 8, 21, 0.95));
+  clip-path: polygon(12% 0, 100% 0, 100% 88%, 88% 100%, 0 100%, 0 12%);
+  box-shadow:
+    inset 0 0 34px rgba(0, 234, 255, 0.11),
+    0 24px 64px rgba(0, 0, 0, 0.3);
+}
+
+.stackCard::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: conic-gradient(
+    transparent,
+    rgba(0, 234, 255, 0.22),
+    transparent,
+    rgba(115, 87, 255, 0.18),
+    transparent
+  );
+  opacity: 0.28;
+  animation: spin 18s linear infinite;
+}
+
+.stackCard::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: 0;
+  clip-path: inherit;
+  background:
+    linear-gradient(180deg, rgba(2, 16, 37, 0.78), rgba(1, 8, 20, 0.98)),
+    repeating-linear-gradient(0deg, transparent 0 11px, rgba(0, 234, 255, 0.04) 12px);
+}
+
+.stackCard > * {
+  position: relative;
+  z-index: 1;
+}
+
+.stackCode {
+  color: rgba(0, 234, 255, 0.32);
+  font-size: clamp(3.2rem, 4.8vw, 5.2rem);
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  line-height: 0.82;
+}
+
+.stackCard span {
+  display: block;
+  margin-top: 2rem;
+  color: var(--cyan);
+  font-size: 0.65rem;
+  font-weight: 950;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.stackCard h3 {
+  margin: 0.6rem 0 0;
+  color: var(--text);
+  font-size: clamp(1.25rem, 1.8vw, 1.72rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.stackCard p {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.72;
+}
+
+.stackCard strong {
+  position: absolute;
+  left: 1.1rem;
+  right: 1.1rem;
+  bottom: 1rem;
+  padding-top: 0.8rem;
+  color: var(--cyan);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(0, 234, 255, 0.18);
+}
+
+.flowGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  position: relative;
+}
+
+.flowGrid::before {
+  content: "";
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.45);
+}
+
+.flowNode {
+  position: relative;
+  z-index: 1;
+  min-height: 11rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 234, 255, 0.24);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 234, 255, 0.15), transparent 42%),
+    rgba(1, 8, 19, 0.78);
+  clip-path: polygon(10% 0, 100% 0, 100% 78%, 90% 100%, 0 100%, 0 22%);
+  box-shadow: inset 0 0 24px rgba(0, 234, 255, 0.08);
+}
+
+.flowNode strong {
+  display: block;
+  color: var(--cyan);
+  font-size: clamp(1.45rem, 2.4vw, 2.6rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.flowNode span {
+  display: block;
+  margin-top: 1rem;
+  color: rgba(232, 251, 255, 0.88);
+  font-weight: 850;
+  line-height: 1.55;
+}
+
+.flowNode p {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.guardSection {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: clamp(1.4rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.guardGrid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.guardItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid rgba(0, 234, 255, 0.21);
+  background:
+    linear-gradient(90deg, rgba(0, 234, 255, 0.1), transparent),
+    rgba(2, 12, 28, 0.72);
+  box-shadow: inset 0 0 22px rgba(0, 234, 255, 0.06);
+}
+
+.guardItem span {
+  width: 0.78rem;
+  aspect-ratio: 1;
+  margin-top: 0.36rem;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow:
+    0 0 14px var(--cyan),
+    0 0 30px rgba(0, 234, 255, 0.52);
+}
+
+.guardItem p {
+  margin: 0;
+  color: rgba(232, 251, 255, 0.86);
+  font-weight: 760;
+  line-height: 1.55;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverseSpin {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.58;
+    transform: scale(0.97);
+  }
+
+  50% {
+    opacity: 0.92;
+    transform: scale(1.035);
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-35%);
+  }
+
+  50% {
+    transform: translateY(135vh);
+  }
+
+  100% {
+    transform: translateY(-35%);
+  }
+}
+
+@keyframes floatPanel {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.42rem);
+  }
+}
+
+@media (max-width: 1220px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .copy h1 {
+    max-width: 16ch;
+  }
+
+  .missionVisual {
+    min-height: 47rem;
+  }
+
+  .stackGrid,
+  .flowGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stackCard {
+    min-height: 21rem;
+  }
+
+  .flowGrid::before {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero,
+  .stackSection,
+  .flowSection,
+  .guardSection {
+    width: min(100% - 1.1rem, 1520px);
+  }
+
+  .hero {
+    padding-top: 2.4rem;
+  }
+
+  .copy h1 {
+    font-size: clamp(2.55rem, 14vw, 4.45rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .missionVisual {
+    min-height: 34rem;
+  }
+
+  .coreStage {
+    inset: 0;
+  }
+
+  .controlStack {
+    display: none;
+  }
+
+  .core {
+    width: min(78vw, 23rem);
+    min-width: 0;
+  }
+
+  .ringAlpha {
+    width: min(92vw, 30rem);
+  }
+
+  .ringBeta {
+    width: min(76vw, 24rem);
+  }
+
+  .ringGamma {
+    width: min(58vw, 18rem);
+  }
+
+  .hexLeft {
+    left: 0;
+  }
+
+  .hexRight {
+    right: 0;
+  }
+
+  .hexBottomLeft {
+    left: 9%;
+  }
+
+  .hexBottomRight {
+    right: 9%;
+  }
+
+  .coreDock {
+    display: none;
+  }
+
+  .stackGrid,
+  .flowGrid,
+  .guardSection {
+    grid-template-columns: 1fr;
+  }
+
+  .stackCard {
+    min-height: 18.5rem;
+  }
+
+  .sectionHead h2,
+  .guardTitle h2 {
+    font-size: clamp(2.2rem, 11vw, 3.8rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .missionPage::before,
+  .scanLayer,
+  .energyField,
+  .ringAlpha,
+  .ringBeta,
+  .ringGamma,
+  .stackCard::before,
+  .controlCard {
+    animation: none;
+  }
+}

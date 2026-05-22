@@ -1,0 +1,9 @@
+{
+  "status": "placeholder",
+  "is_real_proof": false,
+  "warning": "Noch keine echten ProofKit-Artefakte eingetragen. Nicht oeffentlich als bestanden behaupten.",
+  "run_id": null,
+  "failed_gates": null,
+  "learning_visible": false,
+  "speed_visible": false
+}

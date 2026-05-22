@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "status": "prepared",
+  "goal": "Zuverlaessige Darstellung auf bekannten Desktop-, Tablet- und Mobile-Oberflaechen.",
+  "surfaces": [
+    {
+      "id": "desktop-wide",
+      "label": "Desktop / Wide",
+      "width_range": "1180px+",
+      "expected": "Zwei-Spalten-Hero, volle Navigation, volle HUD-Visualisierung."
+    },
+    {
+      "id": "tablet",
+      "label": "Tablet / Medium",
+      "width_range": "721px-1179px",
+      "expected": "Ein-Spalten-Hero, Kartenraster reduziert, Navigation horizontal scrollbar."
+    },
+    {
+      "id": "mobile",
+      "label": "Mobile / Narrow",
+      "width_range": "320px-720px",
+      "expected": "Ein-Spalten-Layout, Buttons vollbreit, Tabellen horizontal scrollbar."
+    },
+    {
+      "id": "touch",
+      "label": "Touch / Pointer Coarse",
+      "width_range": "all",
+      "expected": "Bedienflaechen mindestens 44px hoch, Touch-Scrolling aktiv."
+    },
+    {
+      "id": "reduced-motion",
+      "label": "Reduced Motion",
+      "width_range": "all",
+      "expected": "Animationen und Transitions werden stark reduziert."
+    },
+    {
+      "id": "print",
+      "label": "Print / PDF",
+      "width_range": "print",
+      "expected": "Dunkle Effekte werden entschärft, Inhalte bleiben lesbar."
+    }
+  ],
+  "checks": [
+    "build",
+    "lint",
+    "json",
+    "proof-data",
+    "download-data",
+    "surface-reliability"
+  ]
+}

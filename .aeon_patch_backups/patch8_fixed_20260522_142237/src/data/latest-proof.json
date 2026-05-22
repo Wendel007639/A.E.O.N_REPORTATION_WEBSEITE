@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "status": "data-model-ready",
+  "proof_level": "placeholder",
+  "is_real_proof": false,
+  "warning": "Datenmodell vorbereitet. Noch keine echten ProofKit-Artefakte angebunden. Nicht oeffentlich als bestanden behaupten.",
+
+  "run_id": null,
+  "run_dir": null,
+  "created_at": null,
+  "updated_at": null,
+
+  "intelligence_status": null,
+  "smoke_status": null,
+  "final_exit_status": null,
+  "process_exit_status": null,
+
+  "failed_gates": null,
+  "passed_false_reason": null,
+
+  "run_count": null,
+  "max_run_count": null,
+  "task_count": null,
+  "dimension_result_count": null,
+
+  "learning_visible": false,
+  "speed_visible": false,
+  "speed_total_seconds": null,
+  "learning_evidence_count": null,
+
+  "tasks": [],
+  "dimensions": [],
+
+  "learning_metrics": {
+    "visible": false,
+    "evidence_count": null,
+    "items": []
+  },
+
+  "speed_metrics": {
+    "visible": false,
+    "total_seconds": null,
+    "items": []
+  },
+
+  "report_bundle": {
+    "available": false,
+    "path": null,
+    "files": []
+  },
+
+  "artifacts": [
+    {
+      "key": "intelligence_summary",
+      "file": "intelligence_summary.json",
+      "path": "evidence/latest/intelligence_summary.json",
+      "exists": false,
+      "bytes": null,
+      "sha256": null,
+      "required_for_green": true,
+      "description": "Zusammenfassung des Intelligenz-Tests."
+    },
+    {
+      "key": "intelligence_manifest",
+      "file": "intelligence_manifest.json",
+      "path": "evidence/latest/intelligence_manifest.json",
+      "exists": false,
+      "bytes": null,
+      "sha256": null,
+      "required_for_green": true,
+      "description": "Manifest fuer reproduzierbare ProofKit-Auswertung."
+    },
+    {
+      "key": "proof_smoke_summary",
+      "file": "proof_smoke_summary.json",
+      "path": "evidence/latest/proof_smoke_summary.json",
+      "exists": false,
+      "bytes": null,
+      "sha256": null,
+      "required_for_green": true,
+      "description": "Smoke-Summary fuer ProofKit."
+    },
+    {
+      "key": "proof_smoke_raw",
+      "file": "proof_smoke_raw.json",
+      "path": "evidence/latest/proof_smoke_raw.json",
+      "exists": false,
+      "bytes": null,
+      "sha256": null,
+      "required_for_green": true,
+      "description": "Rohdaten der Smoke-Pruefung."
+    },
+    {
+      "key": "proof_gate_status",
+      "file": "proof_gate_status.env",
+      "path": "evidence/latest/proof_gate_status.env",
+      "exists": false,
+      "bytes": null,
+      "sha256": null,
+      "required_for_green": true,
+      "description": "Gate-Status mit FAILED_GATES."
+    },
+    {
+      "key": "evidence_brief",
+      "file": "evidence_brief.md",
+      "path": "evidence/latest/evidence_brief.md",
+      "exists": false,
+      "bytes": null,
+      "sha256": null,
+      "required_for_green": true,
+      "description": "Menschlich lesbarer Evidence-Brief."
+    }
+  ],
+
+  "audit": {
+    "source": "manual-placeholder",
+    "real_artifacts_connected": false,
+    "created_by_patch": "patch-6",
+    "notes": [
+      "Dieses Datenmodell ist vorbereitet fuer echte ProofKit-Laeufe.",
+      "Gruen darf erst angezeigt werden, wenn echte Artefakte, Gates, Learning und Speed belegt sind.",
+      "PROCESS_EXIT_STATUS allein zaehlt nicht als Proof-Erfolg."
+    ]
+  }
+}

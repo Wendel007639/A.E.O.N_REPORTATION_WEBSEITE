@@ -1,0 +1,23 @@
+{
+  "name": "aeon-reportation-webseite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "webdev": "next dev",
+    "webbuild": "next build",
+    "weblint": "next lint",
+    "webstatus": "git status --short",
+    "webproof": "cat src/data/latest-proof.json"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}

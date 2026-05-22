@@ -1,0 +1,9 @@
+{
+  "src/app/page.tsx": "afc3eadc42ce5072ba017d9df479aa73b891b5bade572f5e052da002eff1959f",
+  "src/app/proof/page.tsx": "936438c519508cb5c1b82a973d64a964da6d5d0f20437d8374c7727bf41ceb45",
+  "src/app/downloads/page.tsx": "e0b80ab18bced0dc6d0e4e4624dff2d0ba6e0e367b778caa338887d766ae1b40",
+  "src/app/layout.tsx": "14900c933e37bc45c27f0a23472fce06e9811db1c550aae553b7e400d128c407",
+  "src/components/Header.tsx": "b63534fc8f53193765abe93e028e67d041ddb48d8e7ea44c7009179476d24f32",
+  "src/components/Footer.tsx": "8790701c08898cfb91c17232e87ebf81fceef5cff12c1c990434d688fee9de0b",
+  "src/styles/globals.css::without_surface_patch": "7625bf47f86e067671380b204c15d51c63aa0cadfdab67c11a65c0d647500a3f"
+}
