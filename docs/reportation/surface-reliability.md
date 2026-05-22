@@ -13,15 +13,15 @@ Die A.E.O.N Reportation-Webseite soll auf bekannten Oberflaechen stabil laufen:
 
 ## Technische Massnahmen
 
-- Manifest fuer App-/Standalone-Kontext
+- Manifest für App-/Standalone-Kontext
 - Robots-Datei
-- Browserconfig fuer Windows-Kacheln
+- Browserconfig für Windows-Kacheln
 - Touch-Hardening
-- Fallback fuer fehlendes `backdrop-filter`
+- Fallback für fehlendes `backdrop-filter`
 - Print-Fallback
 - Reduced-Motion bleibt aktiv
-- Interne Link-Pruefung
-- Browser-only Global-Pruefung
+- Interne Link-Prüfung
+- Browser-only Global-Prüfung
 - Build-, Lint-, JSON-, Proof-, Download- und Surface-Checks
 
 ## Design-Schutz

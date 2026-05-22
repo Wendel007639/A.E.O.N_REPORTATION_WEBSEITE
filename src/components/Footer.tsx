@@ -14,9 +14,9 @@ export default function Footer() {
       <div className="aeon-footer-grid">
         <section className="aeon-footer-panel">
           <span className="aeon-kicker">A.E.O.N Prinzip</span>
-          <h2>Echte Laeufe. Echte Artefakte. Klare Reportation.</h2>
+          <h2>Echte Läufe. Echte Artefakte. Klare Reportation.</h2>
           <p>
-            Diese Webseite ist die sichtbare Reportationsschicht fuer ProofKit,
+            Diese Webseite ist die sichtbare Reportationsschicht für ProofKit,
             Evidence-Briefs, Metriken, Gates und investorentaugliche Erklaerung.
           </p>
         </section>

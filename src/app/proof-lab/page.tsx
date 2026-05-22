@@ -4,7 +4,7 @@ import styles from "./proof-lab.module.css";
 export const metadata: Metadata = {
   title: "Proof Lab | A.E.O.N Reportation",
   description:
-    "A.E.O.N Proof Lab: Premium-HUD fuer Evidence, Gates, Artefakte und No-Fake-Green Kontrolle.",
+    "A.E.O.N Proof Lab: Premium-HUD für Evidence, Gates, Artefakte und No-Fake-Green Kontrolle.",
 };
 
 const evidenceLanes = [
@@ -21,7 +21,7 @@ const evidenceLanes = [
     title: "Artifact Vault",
     signal: "6 EXPECTED / PLACEHOLDER",
     text:
-      "Erwartete Evidence-Dateien existieren physisch. Dieser Status ist kein offizieller Gruenbeweis, sondern nur ein strukturierter Eingang.",
+      "Erwartete Evidence-Dateien existieren physisch. Dieser Status ist kein offizieller Grünbeweis, sondern nur ein strukturierter Eingang.",
     state: "WAITING",
   },
   {
@@ -55,14 +55,14 @@ const telemetry = [
   ["LINT", "Code pruefen", "saubere Flaeche"],
   ["JSON", "Daten pruefen", "lesbare Struktur"],
   ["SURFACE", "UI pruefen", "kein Designbruch"],
-  ["PROOF", "fachlich pruefen", "kein Fake-Gruen"],
+  ["PROOF", "fachlich pruefen", "kein Fake-Grün"],
 ];
 
 const guardRules = [
   "Keine Aenderung an globals.css.",
   "Keine Aenderung an Header, Footer, Layout oder Startseite.",
   "Keine Aenderung an bestehenden Patch-Seiten.",
-  "Keine gruene Proof-Behauptung ohne echte Artefakte.",
+  "Keine grüne Proof-Behauptung ohne echte Artefakte.",
   "Neue Route bleibt isoliert unter /proof-lab.",
 ];
 
@@ -185,7 +185,7 @@ export default function ProofLabPage() {
       <section className={styles.matrixSection} id="evidence-matrix">
         <div className={styles.sectionHead}>
           <p>EVIDENCE-MATRIX</p>
-          <h2>Fuenf Kontrollschichten gegen falsches Gruen.</h2>
+          <h2>Fuenf Kontrollschichten gegen falsches Grün.</h2>
         </div>
 
         <div className={styles.laneGrid}>

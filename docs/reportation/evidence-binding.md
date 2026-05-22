@@ -19,7 +19,7 @@ Die Webseite prueft:
 - SHA256
 - Platzhalter oder echte Datei
 - Download-Pfad
-- Pflicht-Artefakt fuer Gruen
+- Pflicht-Artefakt für Grün
 
 Wichtig:
 Placeholder-Dateien werden erkannt und nicht als echter Proof gewertet.

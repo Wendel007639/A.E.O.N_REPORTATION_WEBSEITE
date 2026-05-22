@@ -23,8 +23,8 @@ Sie muss zeigen:
 
 Wichtigster Satz:
 
-Ein gruener Prozessruecksprung ist kein Proof-Erfolg. Bewertbar ist nur ein Lauf, bei dem fachliche Gates und Artefakte konsistent gruen sind.
+Ein grüner Prozessruecksprung ist kein Proof-Erfolg. Bewertbar ist nur ein Lauf, bei dem fachliche Gates und Artefakte konsistent gruen sind.
 
 Regel:
 
-Keine echte Gruen-Behauptung ohne angebundene ProofKit-Artefakte.
+Keine echte Grün-Behauptung ohne angebundene ProofKit-Artefakte.

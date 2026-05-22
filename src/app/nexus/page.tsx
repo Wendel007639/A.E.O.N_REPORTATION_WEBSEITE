@@ -4,7 +4,7 @@ import styles from "./nexus.module.css";
 export const metadata: Metadata = {
   title: "Nexus | A.E.O.N Reportation",
   description:
-    "A.E.O.N Nexus Control: Premium-HUD fuer Intelligenz, Wissen, Schutz, Vertrauen und Verbundenheit.",
+    "A.E.O.N Nexus Control: Premium-HUD für Intelligenz, Wissen, Schutz, Vertrauen und Verbundenheit.",
 };
 
 const values = [
@@ -27,14 +27,14 @@ const values = [
     title: "Schutz",
     signal: "Sicher / Ethisch / Verlaesslich",
     text:
-      "Schutz bedeutet: keine falschen Gruenmeldungen, keine unbewiesenen Behauptungen und keine Design-Operation ohne Guard.",
+      "Schutz bedeutet: keine falschen Grünmeldungen, keine unbewiesenen Behauptungen und keine Design-Operation ohne Guard.",
   },
   {
     code: "04",
     title: "Vertrauen",
     signal: "Transparent / Menschlich / Verbunden",
     text:
-      "Vertrauen entsteht durch sichtbare Grenzen, pruefbare Zustaende und eine Oberflaeche, die nicht mehr verspricht als sie beweisen kann.",
+      "Vertrauen entsteht durch sichtbare Grenzen, prüfbare Zustaende und eine Oberflaeche, die nicht mehr verspricht als sie beweisen kann.",
   },
   {
     code: "05",
@@ -57,7 +57,7 @@ const guards = [
   "Keine globale CSS-Aenderung.",
   "Keine Aenderung an Header, Footer, Layout oder Startseite.",
   "Keine Standard-Template-Optik.",
-  "Keine gruene Proof-Behauptung ohne echte Artefakte.",
+  "Keine grüne Proof-Behauptung ohne echte Artefakte.",
   "Neue Route bleibt isoliert unter /nexus.",
 ];
 
@@ -112,7 +112,7 @@ export default function NexusPage() {
           <p className={styles.eyebrow}>PATCH 10 / A.E.O.N NEXUS CONTROL</p>
           <h1>Der Nexus verbindet Werte mit beweisbarer Kontrolle.</h1>
           <p className={styles.lead}>
-            Diese Seite uebersetzt die A.E.O.N DNA in ein sichtbares
+            Diese Seite übersetzt die A.E.O.N DNA in ein sichtbares
             Kontrollsystem: Intelligenz, Wissen, Schutz, Vertrauen und
             Verbundenheit werden nicht nur genannt, sondern als lebende
             Systemarchitektur dargestellt.
@@ -199,7 +199,7 @@ export default function NexusPage() {
       <section className={styles.controlSection} id="control">
         <div className={styles.sectionHead}>
           <p>CONTROL-FLOW</p>
-          <h2>Kein Glueck. Keine Magie. Ein pruefbarer Ablauf.</h2>
+          <h2>Kein Glueck. Keine Magie. Ein prüfbarer Ablauf.</h2>
         </div>
 
         <div className={styles.flowLine}>

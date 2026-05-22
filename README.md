@@ -9,4 +9,7 @@ Wichtig:
 - Erst Beweis, dann Vision.
 
 
-
+# Änderungen vornehmen:
+git add .
+git commit -m "Update AEON website"
+git push

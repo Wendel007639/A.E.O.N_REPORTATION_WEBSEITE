@@ -2,11 +2,11 @@
 
 Kernsatz:
 
-A.E.O.N ist ein lokal laufendes, pruefbares ProofKit-System mit reproduzierbaren Artefakten, sichtbarem Lernen, Speed-Metriken und gruenen Gates.
+A.E.O.N ist ein lokal laufendes, prüfbares ProofKit-System mit reproduzierbaren Artefakten, sichtbarem Lernen, Speed-Metriken und grünen Gates.
 
 Regeln:
 
-- Nicht uebertreiben.
+- Nicht übertreiben.
 - Nicht "AGI" behaupten.
 - Nicht "bewusst" behaupten.
 - Nicht "fertiges Produkt" behaupten.

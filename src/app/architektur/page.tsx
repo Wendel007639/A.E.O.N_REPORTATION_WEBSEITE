@@ -13,7 +13,7 @@ const pillars = [
     title: "Surface Shell",
     kicker: "Interface / Mobile / Downloads",
     text:
-      "Die sichtbaren Flaechen bleiben an die bestehende A.E.O.N Design-DNA gebunden. Keine globale Ueberschreibung, kein Bruch im Nexus-Stil.",
+      "Die sichtbaren Flaechen bleiben an die bestehende A.E.O.N Design-DNA gebunden. Keine globale Überschreibung, kein Bruch im Nexus-Stil.",
     status: "DESIGN-GUARD",
   },
   {
@@ -88,7 +88,7 @@ const railsRight = [
 const guardRails = [
   "Keine globale CSS-Operation.",
   "Keine Aenderung an Header, Footer, Layout oder Startseite.",
-  "Keine gruene Proof-Behauptung ohne echte Artefakte.",
+  "Keine grüne Proof-Behauptung ohne echte Artefakte.",
   "Keine Template-Optik, kein Standard-Kartenbau, kein Anfaenger-Niveau.",
 ];
 
@@ -146,7 +146,7 @@ export default function ArchitekturPage() {
             <strong>ACTIVE</strong>
             <p>
               Isolierte Route. Kein globals.css. Kein Header-Eingriff. Kein
-              falsches Gruen.
+              falsches Grün.
             </p>
           </div>
 

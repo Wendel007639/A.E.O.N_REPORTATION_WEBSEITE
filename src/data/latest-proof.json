@@ -3,7 +3,7 @@
   "status": "evidence-bound-not-verified",
   "proof_level": "placeholder",
   "is_real_proof": false,
-  "warning": "Evidence-Struktur angebunden. Noch kein echter gruener Proof erkannt oder Artefakte sind Platzhalter.",
+  "warning": "Evidence-Struktur angebunden. Noch kein echter grüner Proof erkannt oder Artefakte sind Platzhalter.",
   "run_id": null,
   "run_dir": null,
   "created_at": null,
@@ -73,7 +73,7 @@
       "content_status": "placeholder",
       "last_seen_at": "2026-05-22T12:22:38.556Z",
       "required_for_green": true,
-      "description": "Manifest fuer reproduzierbare ProofKit-Auswertung."
+      "description": "Manifest für reproduzierbare ProofKit-Auswertung."
     },
     {
       "key": "proof_smoke_summary",
@@ -87,7 +87,7 @@
       "content_status": "placeholder",
       "last_seen_at": "2026-05-22T12:22:38.556Z",
       "required_for_green": true,
-      "description": "Smoke-Summary fuer ProofKit."
+      "description": "Smoke-Summary für ProofKit."
     },
     {
       "key": "proof_smoke_raw",
@@ -101,7 +101,7 @@
       "content_status": "placeholder",
       "last_seen_at": "2026-05-22T12:22:38.556Z",
       "required_for_green": true,
-      "description": "Rohdaten der Smoke-Pruefung."
+      "description": "Rohdaten der Smoke-Prüfung."
     },
     {
       "key": "proof_gate_status",
@@ -139,7 +139,7 @@
     "notes": [
       "Evidence-Struktur wurde angebunden.",
       "Placeholder-Dateien werden nicht als echter Proof gewertet.",
-      "Gruen nur bei Artefakten, Gates, Learning und Speed."
+      "Grün nur bei Artefakten, Gates, Learning und Speed."
     ]
   }
 }

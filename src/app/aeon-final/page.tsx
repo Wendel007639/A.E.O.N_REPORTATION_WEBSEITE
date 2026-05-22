@@ -4,7 +4,7 @@ import styles from "./aeon-final.module.css";
 export const metadata: Metadata = {
   title: "A.E.O.N Final Gate | A.E.O.N Reportation",
   description:
-    "A.E.O.N Final Gate: Premium-HUD fuer Architektur, Nexus, Proof Lab, Mission Control und Design-Guard.",
+    "A.E.O.N Final Gate: Premium-HUD für Architektur, Nexus, Proof Lab, Mission Control und Design-Guard.",
 };
 
 const finalNodes = [
@@ -48,9 +48,9 @@ const finalNodes = [
 
 const finalChecks = [
   ["DESIGN", "globals.css unberuehrt", "Header, Footer, Layout und Startseite bleiben unangetastet."],
-  ["PROOF", "kein Fake-Gruen", "Official Green bleibt false, solange echte Artefakte fehlen."],
-  ["BUILD", "Validierung Pflicht", "Lint und Build muessen nach diesem Patch wieder sauber laufen."],
-  ["MOBILE", "responsive HUD", "Die finale Seite bleibt fuer kleinere Displays kontrolliert reduziert."],
+  ["PROOF", "kein Fake-Grün", "Official Green bleibt false, solange echte Artefakte fehlen."],
+  ["BUILD", "Validierung Pflicht", "Lint und Build müssen nach diesem Patch wieder sauber laufen."],
+  ["MOBILE", "responsive HUD", "Die finale Seite bleibt für kleinere Displays kontrolliert reduziert."],
   ["FINAL", "isolierte Route", "Patch 13 schreibt nur unter /aeon-final."],
 ];
 
@@ -58,7 +58,7 @@ const guardRules = [
   "Keine Aenderung an globals.css.",
   "Keine Aenderung an Header, Footer, Layout oder Startseite.",
   "Keine Aenderung an /architektur, /nexus, /proof-lab oder /mission-control.",
-  "Keine gruene Proof-Behauptung ohne echte Artefakte.",
+  "Keine grüne Proof-Behauptung ohne echte Artefakte.",
   "Finale Route bleibt isoliert unter /aeon-final.",
 ];
 
@@ -126,7 +126,7 @@ export default function AeonFinalPage() {
             <strong>SEALED</strong>
             <p>
               Kein globals.css. Kein Header-Eingriff. Kein Layout-Eingriff.
-              Kein Fake-Gruen. Nur eine neue isolierte Finalseite.
+              Kein Fake-Grün. Nur eine neue isolierte Finalseite.
             </p>
           </div>
 

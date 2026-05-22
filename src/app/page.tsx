@@ -44,12 +44,12 @@ const telemetryCards = [
   {
     label: "Run-ID",
     value: runIdLabel,
-    detail: "Kommt spaeter aus echten ProofKit-Artefakten."
+    detail: "Kommt später aus echten ProofKit-Artefakten."
   },
   {
     label: "Gate-Status",
     value: gateLabel,
-    detail: "Gruen ist nur ein konsistenter Lauf mit fachlichen Gates."
+    detail: "Grün ist nur ein konsistenter Lauf mit fachlichen Gates."
   },
   {
     label: "Learning",
@@ -66,7 +66,7 @@ const telemetryCards = [
 const pillars = [
   {
     title: "Intelligenz",
-    text: "Pruefbar ueber Aufgaben, Dimensionen, Gates und Artefakte."
+    text: "Prüfbar über Aufgaben, Dimensionen, Gates und Artefakte."
   },
   {
     title: "Wissen",
@@ -78,7 +78,7 @@ const pillars = [
   },
   {
     title: "Vertrauen",
-    text: "Ein Pruefer muss Runs, Status und Dateien nachvollziehen koennen."
+    text: "Ein Prüfer muss Runs, Status und Dateien nachvollziehen können."
   },
   {
     title: "Verbundenheit",
@@ -122,13 +122,13 @@ export default function HomePage() {
           <div className="aeon-pill">A.E.O.N Reportation Webseite</div>
 
           <h1 className="aeon-title">
-            Pruefbare Reportation fuer ein echtes ProofKit-System.
+            Prüfbare Reportation für ein echtes ProofKit-System.
           </h1>
 
           <p className="aeon-lead">
-            A.E.O.N ist ein lokal laufendes, pruefbares ProofKit-System mit
+            A.E.O.N ist ein lokal laufendes, prüfbares ProofKit-System mit
             reproduzierbaren Artefakten, sichtbarem Lernen, Speed-Metriken und
-            gruenen Gates.
+            grünen Gates.
           </p>
 
           <div className="aeon-proof-ribbon">
@@ -139,7 +139,7 @@ export default function HomePage() {
 
           <div className="aeon-actions" aria-label="Schnellnavigation">
             <Link className="aeon-button aeon-button-primary" href="/proof">
-              Proof oeffnen
+              Proof öffnen
             </Link>
             <Link className="aeon-button aeon-button-secondary" href="/downloads">
               Artefakte ansehen
@@ -191,7 +191,7 @@ export default function HomePage() {
           <span className="aeon-kicker">Aktueller Proof-Status</span>
           <h2>Die Startseite behauptet nur, was Daten hergeben.</h2>
           <p>
-            Diese Seite ist die Eingangsschicht fuer Pruefer, Investoren und
+            Diese Seite ist die Eingangsschicht für Prüfer, Investoren und
             technische Leser. Status, Runs und Metriken werden nicht frei
             erfunden, sondern aus dem Datenmodell abgeleitet.
           </p>
@@ -210,7 +210,7 @@ export default function HomePage() {
 
       <section className="aeon-home-section aeon-route-section">
         <div className="aeon-section-heading">
-          <span className="aeon-kicker">Direkte Pruefung</span>
+          <span className="aeon-kicker">Direkte Prüfung</span>
           <h2>Von der Vision direkt zum Beleg.</h2>
         </div>
 

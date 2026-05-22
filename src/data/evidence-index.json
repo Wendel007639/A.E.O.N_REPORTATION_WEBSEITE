@@ -30,7 +30,7 @@
       "content_status": "placeholder",
       "last_seen_at": "2026-05-22T12:22:38.556Z",
       "required_for_green": true,
-      "description": "Manifest fuer reproduzierbare ProofKit-Auswertung."
+      "description": "Manifest für reproduzierbare ProofKit-Auswertung."
     },
     {
       "key": "proof_smoke_summary",
@@ -44,7 +44,7 @@
       "content_status": "placeholder",
       "last_seen_at": "2026-05-22T12:22:38.556Z",
       "required_for_green": true,
-      "description": "Smoke-Summary fuer ProofKit."
+      "description": "Smoke-Summary für ProofKit."
     },
     {
       "key": "proof_smoke_raw",
@@ -58,7 +58,7 @@
       "content_status": "placeholder",
       "last_seen_at": "2026-05-22T12:22:38.556Z",
       "required_for_green": true,
-      "description": "Rohdaten der Smoke-Pruefung."
+      "description": "Rohdaten der Smoke-Prüfung."
     },
     {
       "key": "proof_gate_status",

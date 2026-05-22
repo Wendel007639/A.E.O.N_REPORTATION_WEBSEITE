@@ -6,7 +6,7 @@ Zweck:
 
 Die Webseite darf nicht blind behaupten. Sie liest Status, Runs, Gates, Metriken und Artefakte aus diesem Datenmodell.
 
-## Gruen-Regel
+## Grün-Regel
 
 Ein Lauf darf nur als gruen gelten, wenn mindestens gilt:
 
@@ -26,7 +26,7 @@ Ein Lauf darf nur als gruen gelten, wenn mindestens gilt:
 
 Wichtigster Satz:
 
-Ein gruener Prozessruecksprung ist kein Proof-Erfolg. Bewertbar ist nur ein Lauf, bei dem fachliche Gates und Artefakte konsistent gruen sind.
+Ein grüner Prozessruecksprung ist kein Proof-Erfolg. Bewertbar ist nur ein Lauf, bei dem fachliche Gates und Artefakte konsistent gruen sind.
 
 ## Pflicht-Artefakte
 
@@ -41,4 +41,4 @@ Ein gruener Prozessruecksprung ist kein Proof-Erfolg. Bewertbar ist nur ein Lauf
 
 Das Datenmodell ist vorbereitet.
 
-Es ist noch kein echter gruener Proof angebunden.
+Es ist noch kein echter grüner Proof angebunden.

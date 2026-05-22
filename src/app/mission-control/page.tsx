@@ -4,7 +4,7 @@ import styles from "./mission-control.module.css";
 export const metadata: Metadata = {
   title: "Mission Control | A.E.O.N Reportation",
   description:
-    "A.E.O.N Mission Control: Premium-HUD fuer Surface, Nexus, Proof, Guard und Delivery.",
+    "A.E.O.N Mission Control: Premium-HUD für Surface, Nexus, Proof, Guard und Delivery.",
 };
 
 const missionStack = [
@@ -55,14 +55,14 @@ const launchFlow = [
   ["ROUTE", "System fuehren", "Nexus-Pfad setzen"],
   ["GUARD", "Design sichern", "Bestehendes schuetzen"],
   ["VERIFY", "Gates pruefen", "Build und Lint"],
-  ["REPORT", "Status liefern", "kein Fake-Gruen"],
+  ["REPORT", "Status liefern", "kein Fake-Grün"],
 ];
 
 const guardRules = [
   "Keine Aenderung an globals.css.",
   "Keine Aenderung an Header, Footer, Layout oder Startseite.",
   "Keine Aenderung an /architektur, /nexus oder /proof-lab.",
-  "Keine gruene Proof-Behauptung ohne echte Artefakte.",
+  "Keine grüne Proof-Behauptung ohne echte Artefakte.",
   "Neue Route bleibt isoliert unter /mission-control.",
 ];
 

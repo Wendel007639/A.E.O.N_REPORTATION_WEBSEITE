@@ -62,7 +62,7 @@ const summaryStats = [
   {
     label: "Pflicht-Artefakte",
     value: String(requiredArtifactCount),
-    detail: "Diese Dateien sind fuer einen gruennen Proof erforderlich."
+    detail: "Diese Dateien sind für einen gruennen Proof erforderlich."
   },
   {
     label: "Freigabe",
@@ -78,7 +78,7 @@ export default function DownloadsPage() {
         <div className="aeon-downloads-copy">
           <div className="aeon-pill">Evidence Download Vault</div>
 
-          <h1 className="aeon-title">Downloads fuer Beweise, nicht fuer Behauptungen.</h1>
+          <h1 className="aeon-title">Downloads für Beweise, nicht für Behauptungen.</h1>
 
           <p className="aeon-lead">
             Diese Seite sammelt Evidence-Briefs, Proof-JSONs, Manifest-Dateien,
@@ -157,7 +157,7 @@ export default function DownloadsPage() {
       <section className="aeon-downloads-section">
         <div className="aeon-section-heading">
           <span className="aeon-kicker">Download-Gruppen</span>
-          <h2>Belege geordnet nach Pruefung, Historie und Kommunikation.</h2>
+          <h2>Belege geordnet nach Prüfung, Historie und Kommunikation.</h2>
         </div>
 
         <div className="aeon-download-group-list">

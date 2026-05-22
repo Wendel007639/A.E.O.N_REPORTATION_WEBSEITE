@@ -5,7 +5,7 @@ export default function Page() {
         <div className="aeon-card">
           <div className="aeon-kicker">A.E.O.N</div>
           <h1>Investoren</h1>
-          <p className="aeon-lead">A.E.O.N wird als pruefbares technisches System erklaert, nicht als Hype-Versprechen.</p>
+          <p className="aeon-lead">A.E.O.N wird als prüfbares technisches System erklaert, nicht als Hype-Versprechen.</p>
         </div>
       </section>
     </main>

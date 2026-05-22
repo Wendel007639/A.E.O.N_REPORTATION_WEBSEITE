@@ -6,7 +6,7 @@
     {
       "id": "official-full-proof",
       "title": "Letzter offizieller Full-Proof",
-      "description": "Zentrale Download-Gruppe fuer den neuesten bestandenen Full-Proof.",
+      "description": "Zentrale Download-Gruppe für den neuesten bestandenen Full-Proof.",
       "items": [
         {
           "id": "latest-evidence-brief",
@@ -17,7 +17,7 @@
           "source_path": "evidence/latest/evidence_brief.md",
           "available": false,
           "requires_real_proof": true,
-          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+          "note": "Noch nicht freigeschaltet, weil kein echter grüner Proof erkannt wurde."
         },
         {
           "id": "latest-proof-bundle",
@@ -28,25 +28,25 @@
           "source_path": "evidence/latest",
           "available": false,
           "requires_real_proof": true,
-          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+          "note": "Noch nicht freigeschaltet, weil kein echter grüner Proof erkannt wurde."
         }
       ]
     },
     {
       "id": "passed-runs",
-      "title": "Fruehere bestandene Laeufe",
-      "description": "Archiv fuer bestandene Runs mit reproduzierbaren Artefakten.",
+      "title": "Fruehere bestandene Läufe",
+      "description": "Archiv für bestandene Runs mit reproduzierbaren Artefakten.",
       "items": [
         {
           "id": "passed-runs-index",
           "title": "Passed Runs Index",
-          "description": "Index frueherer bestandener Laeufe.",
+          "description": "Index frueherer bestandener Läufe.",
           "format": "JSON",
           "href": null,
           "source_path": "evidence/runs",
           "available": false,
           "requires_real_proof": true,
-          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+          "note": "Noch nicht freigeschaltet, weil kein echter grüner Proof erkannt wurde."
         }
       ]
     },
@@ -64,7 +64,7 @@
           "source_path": "evidence/failed-runs",
           "available": false,
           "requires_real_proof": false,
-          "note": "Wird spaeter mit Debug-Historie gefuellt."
+          "note": "Wird später mit Debug-Historie gefuellt."
         }
       ]
     },
@@ -100,7 +100,7 @@
           "source_path": "evidence/latest",
           "available": false,
           "requires_real_proof": true,
-          "note": "Noch nicht freigeschaltet, weil kein echter gruener Proof erkannt wurde."
+          "note": "Noch nicht freigeschaltet, weil kein echter grüner Proof erkannt wurde."
         }
       ]
     }

@@ -98,7 +98,7 @@ const statusCards = [
     label: "SMOKE_STATUS",
     value: display.smokeStatus,
     tone: latestProof.smoke_status === 0 ? "good" : "warn",
-    detail: "Smoke-Pruefung fuer ProofKit-Artefakte."
+    detail: "Smoke-Prüfung für ProofKit-Artefakte."
   },
   {
     label: "FINAL_EXIT_STATUS",
@@ -110,7 +110,7 @@ const statusCards = [
     label: "PROCESS_EXIT_STATUS",
     value: display.processExitStatus,
     tone: latestProof.process_exit_status === 0 ? "neutral" : "warn",
-    detail: "Allein nicht ausreichend fuer Proof-Erfolg."
+    detail: "Allein nicht ausreichend für Proof-Erfolg."
   }
 ] as const;
 
@@ -188,7 +188,7 @@ export default function ProofPage() {
 
           <p className="aeon-lead">
             Diese Seite zeigt Run-ID, Gates, Statuswerte, Learning, Speed und
-            Artefakte. Ein gruener Prozessruecksprung allein zaehlt nicht als
+            Artefakte. Ein grüner Prozessruecksprung allein zaehlt nicht als
             Proof-Erfolg.
           </p>
 
@@ -271,7 +271,7 @@ export default function ProofPage() {
       <section className="aeon-proof-section">
         <div className="aeon-section-heading">
           <span className="aeon-kicker">Status-Gates</span>
-          <h2>Bewertbar ist nur ein konsistenter gruener Lauf.</h2>
+          <h2>Bewertbar ist nur ein konsistenter grüner Lauf.</h2>
           <p>
             PROCESS_EXIT_STATUS ist sichtbar, aber nicht entscheidend allein.
             Entscheidend sind fachliche Gates, Artefakte und konsistente
@@ -295,7 +295,7 @@ export default function ProofPage() {
       <section className="aeon-proof-section">
         <div className="aeon-section-heading">
           <span className="aeon-kicker">Metriken</span>
-          <h2>Learning und Speed muessen sichtbar sein.</h2>
+          <h2>Learning und Speed müssen sichtbar sein.</h2>
         </div>
 
         <div className="aeon-proof-metric-grid">
@@ -315,7 +315,7 @@ export default function ProofPage() {
           <span className="aeon-kicker">Artefakte</span>
           <h2>Der Beweis liegt in Dateien, nicht in Behauptungen.</h2>
           <p>
-            Diese Tabelle ist vorbereitet fuer echte ProofKit-Artefakte. Solange
+            Diese Tabelle ist vorbereitet für echte ProofKit-Artefakte. Solange
             Patch 6 und Patch 8 noch nicht angebunden sind, bleibt der Status
             bewusst offen.
           </p>
