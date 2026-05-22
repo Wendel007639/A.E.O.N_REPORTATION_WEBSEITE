@@ -1,0 +1,103 @@
+.shell {
+  min-height: 100vh;
+  padding: 72px clamp(18px, 4vw, 72px);
+  color: #e8fbff;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(34, 255, 244, 0.18), transparent 34%),
+    radial-gradient(circle at 82% 20%, rgba(124, 77, 255, 0.18), transparent 32%),
+    linear-gradient(145deg, #020710 0%, #06121f 48%, #02050c 100%);
+}
+
+.hero {
+  max-width: 980px;
+  padding: clamp(28px, 5vw, 58px);
+  border: 1px solid rgba(83, 238, 255, 0.28);
+  border-radius: 34px;
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.92), rgba(8, 28, 40, 0.66));
+  box-shadow: 0 0 70px rgba(0, 229, 255, 0.12), inset 0 0 40px rgba(94, 255, 245, 0.05);
+}
+
+.kicker,
+.label {
+  color: #39f5ff;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.hero h1 {
+  margin: 18px 0;
+  font-size: clamp(2.4rem, 7vw, 5.8rem);
+  line-height: 0.92;
+  letter-spacing: -0.07em;
+  text-shadow: 0 0 28px rgba(50, 244, 255, 0.38);
+}
+
+.hero p {
+  max-width: 760px;
+  color: #b9d9e6;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 26px 0;
+  max-width: 980px;
+}
+
+.panel,
+.report {
+  border: 1px solid rgba(83, 238, 255, 0.22);
+  border-radius: 28px;
+  background: rgba(4, 14, 25, 0.76);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+}
+
+.panel {
+  padding: 26px;
+}
+
+.panel h2 {
+  margin: 12px 0;
+  font-size: 1.35rem;
+}
+
+.panel p,
+.text p {
+  color: #b9d9e6;
+  line-height: 1.75;
+}
+
+.report {
+  max-width: 980px;
+  overflow: hidden;
+}
+
+.reportHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 26px;
+  border-bottom: 1px solid rgba(83, 238, 255, 0.18);
+  color: #39f5ff;
+}
+
+.text {
+  padding: clamp(26px, 4vw, 42px);
+  font-size: clamp(1.02rem, 2vw, 1.18rem);
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reportHeader {
+    flex-direction: column;
+  }
+}
