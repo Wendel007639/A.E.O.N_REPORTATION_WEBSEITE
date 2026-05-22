@@ -25,9 +25,14 @@
   overflow: hidden;
 }
 
-.scanline {
+.scanline,
+.matrix {
   position: absolute;
   inset: 0;
+  pointer-events: none;
+}
+
+.scanline {
   background: repeating-linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.035),
@@ -36,7 +41,14 @@
     transparent 9px
   );
   opacity: 0.22;
-  pointer-events: none;
+}
+
+.matrix {
+  background-image:
+    linear-gradient(rgba(66, 248, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(66, 248, 255, 0.07) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at 72% 35%, black, transparent 66%);
 }
 
 .glowOne,
@@ -119,6 +131,7 @@
 }
 
 .signalCard,
+.timeline,
 .report {
   border: 1px solid rgba(75, 240, 255, 0.24);
   background: rgba(3, 13, 25, 0.78);
@@ -133,6 +146,8 @@
 }
 
 .signalCard span,
+.timelineIntro span,
+.timelineItem span,
 .reportHead span,
 .textBlock span {
   display: block;
@@ -151,10 +166,50 @@
 }
 
 .signalCard p,
+.timelineIntro p,
+.timelineItem p,
 .reportHead p,
 .textBlock p {
   color: #bddce8;
   line-height: 1.75;
+}
+
+.timeline {
+  max-width: 1240px;
+  margin: 24px 0;
+  padding: clamp(26px, 4vw, 42px);
+  border-radius: 34px;
+}
+
+.timelineIntro h2 {
+  max-width: 820px;
+  margin: 12px 0 26px;
+  font-size: clamp(2rem, 5vw, 4.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.timelineGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(75, 240, 255, 0.13);
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.timelineItem {
+  min-height: 230px;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 80% 12%, rgba(66, 248, 255, 0.12), transparent 38%),
+    rgba(3, 13, 25, 0.94);
+}
+
+.timelineItem h3 {
+  margin: 15px 0 10px;
+  font-size: 1.55rem;
+  letter-spacing: -0.04em;
 }
 
 .report {
@@ -198,8 +253,9 @@
   font-size: clamp(1.08rem, 2vw, 1.24rem);
 }
 
-@media (max-width: 980px) {
-  .signalGrid {
+@media (max-width: 1080px) {
+  .signalGrid,
+  .timelineGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -210,6 +266,7 @@
 
 @media (max-width: 680px) {
   .signalGrid,
+  .timelineGrid,
   .textBlock {
     grid-template-columns: 1fr;
   }

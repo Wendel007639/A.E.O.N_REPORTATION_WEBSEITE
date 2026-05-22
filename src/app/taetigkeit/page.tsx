@@ -13,6 +13,7 @@ export default function TaetigkeitPage() {
     <main className={styles.shell}>
       <section className={styles.hero}>
         <div className={styles.scanline} />
+        <div className={styles.matrix} />
         <div className={styles.glowOne} />
         <div className={styles.glowTwo} />
 
@@ -22,7 +23,7 @@ export default function TaetigkeitPage() {
 
         <div className={styles.statusBar}>
           <span>{data.status}</span>
-          <strong>Text Only · Secure Publishing</strong>
+          <strong>Text Only · Secure Publishing · Investor Ready</strong>
         </div>
       </section>
 
@@ -37,6 +38,23 @@ export default function TaetigkeitPage() {
             </p>
           </article>
         ))}
+      </section>
+
+      <section className={styles.timeline}>
+        <div className={styles.timelineIntro}>
+          <span>Publisher Ablauf</span>
+          <h2>Von lokaler Tätigkeit zur öffentlichen Investorensicht</h2>
+        </div>
+
+        <div className={styles.timelineGrid}>
+          {data.timeline.map((item) => (
+            <article className={styles.timelineItem} key={item.step}>
+              <span>{item.step}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className={styles.report}>

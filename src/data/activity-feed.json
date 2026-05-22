@@ -2,7 +2,7 @@
   "updatedAt": "2026-05-22T00:00:00.000Z",
   "title": "Tätigkeitsreportation",
   "subtitle": "Öffentliche, sichere und investorentaugliche Darstellung deiner Tätigkeit.",
-  "body": "A.E.O.N dokumentiert Tätigkeit nicht als Rohdatenstrom, sondern als kuratierte Reportation. Sichtbar wird nur, was nach außen freigegeben ist.\n\nDie Seite ist für Investoren, Prüfer und strategische Kontakte gedacht. Sie zeigt Fortschritt, Richtung, Schutzlogik und nächsten Nutzen, ohne interne Details offenzulegen.\n\nDer aktuelle Fokus liegt auf sauberer Darstellung, belastbarer Sprache und kontrollierter Veröffentlichung. Keine Zugangsdaten. Keine privaten Notizen. Keine ungeprüften Behauptungen.",
+  "body": "A.E.O.N dokumentiert Tätigkeit nicht als Rohdatenstrom, sondern als kontrollierte Reportation. Sichtbar wird nur, was nach außen freigegeben ist.\n\nDie Seite ist für Investoren, Prüfer und strategische Kontakte gedacht. Sie zeigt Fortschritt, Richtung, Schutzlogik und nächsten Nutzen, ohne interne Details offenzulegen.\n\nDer aktuelle Fokus liegt auf sauberer Darstellung, belastbarer Sprache und kontrollierter Veröffentlichung. Keine Zugangsdaten. Keine privaten Notizen. Keine ungeprüften Behauptungen.",
   "status": "Öffentliche Investorenversion",
   "protection": "Rohdaten bleiben lokal. Veröffentlicht werden nur freigegebene Texte.",
   "signals": [
@@ -10,5 +10,27 @@
     "Rohdaten schützen",
     "Investorensprache schärfen",
     "Fortschritt nachvollziehbar halten"
+  ],
+  "timeline": [
+    {
+      "step": "01",
+      "title": "Eingabe",
+      "text": "Du sammelst Tätigkeit lokal. Nichts davon wird automatisch veröffentlicht."
+    },
+    {
+      "step": "02",
+      "title": "Filter",
+      "text": "Nur freigegebene Texte werden in eine öffentliche Reportation überführt."
+    },
+    {
+      "step": "03",
+      "title": "Prüfung",
+      "text": "Build und Lint prüfen, ob die Webseite sauber auslieferbar bleibt."
+    },
+    {
+      "step": "04",
+      "title": "Veröffentlichung",
+      "text": "GitHub Pages zeigt nur die kuratierte Investorenversion."
+    }
   ]
 }
