@@ -9,5 +9,4 @@ Wichtig:
 - Erst Beweis, dann Vision.
 
 
-# Server Start:
-npm run webdev
+
