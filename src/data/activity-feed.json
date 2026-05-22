@@ -1,7 +1,14 @@
 {
   "updatedAt": "2026-05-22T00:00:00.000Z",
   "title": "Tätigkeitsreportation",
-  "body": "A.E.O.N dokumentiert Tätigkeiten als klare, öffentliche Reportation. Interne Rohdaten bleiben geschützt. Sichtbar wird nur, was für Investoren, Prüfer und strategische Kontakte freigegeben ist.\n\nDer Fokus liegt auf nachvollziehbarem Fortschritt, sauberer Einordnung und einer verständlichen Darstellung des aktuellen Entwicklungsstands.\n\nDiese Seite dient als kuratierte Oberfläche für Tätigkeit, Status, Richtung und nächste Schritte. Keine Zugangsdaten. Keine privaten Notizen. Keine ungeprüften Behauptungen.",
+  "subtitle": "Öffentliche, sichere und investorentaugliche Darstellung deiner Tätigkeit.",
+  "body": "A.E.O.N dokumentiert Tätigkeit nicht als Rohdatenstrom, sondern als kuratierte Reportation. Sichtbar wird nur, was nach außen freigegeben ist.\n\nDie Seite ist für Investoren, Prüfer und strategische Kontakte gedacht. Sie zeigt Fortschritt, Richtung, Schutzlogik und nächsten Nutzen, ohne interne Details offenzulegen.\n\nDer aktuelle Fokus liegt auf sauberer Darstellung, belastbarer Sprache und kontrollierter Veröffentlichung. Keine Zugangsdaten. Keine privaten Notizen. Keine ungeprüften Behauptungen.",
   "status": "Öffentliche Investorenversion",
-  "protection": "Rohdaten bleiben lokal. Veröffentlicht werden nur freigegebene Texte."
+  "protection": "Rohdaten bleiben lokal. Veröffentlicht werden nur freigegebene Texte.",
+  "signals": [
+    "Tätigkeit sichtbar machen",
+    "Rohdaten schützen",
+    "Investorensprache schärfen",
+    "Fortschritt nachvollziehbar halten"
+  ]
 }

@@ -12,56 +12,48 @@ export default function TaetigkeitPage() {
   return (
     <main className={styles.shell}>
       <section className={styles.hero}>
-        <div className={styles.orbit} />
-        <div className={styles.kicker}>A.E.O.N Activity Layer</div>
-        <h1>{data.title}</h1>
-        <p>{data.protection}</p>
+        <div className={styles.scanline} />
+        <div className={styles.glowOne} />
+        <div className={styles.glowTwo} />
 
-        <div className={styles.heroGrid}>
-          <div>
-            <span>Status</span>
-            <strong>{data.status}</strong>
-          </div>
-          <div>
-            <span>Modus</span>
-            <strong>Text Only</strong>
-          </div>
-          <div>
-            <span>Schutz</span>
-            <strong>Keine Rohdaten</strong>
-          </div>
+        <div className={styles.kicker}>A.E.O.N Activity Console</div>
+        <h1>{data.title}</h1>
+        <p className={styles.subtitle}>{data.subtitle}</p>
+
+        <div className={styles.statusBar}>
+          <span>{data.status}</span>
+          <strong>Text Only · Secure Publishing</strong>
         </div>
       </section>
 
       <section className={styles.signalGrid}>
-        <article className={styles.card}>
-          <span>01</span>
-          <h2>Tätigkeit</h2>
-          <p>Öffentliche Kurzfassung dessen, was nach außen sichtbar sein darf.</p>
-        </article>
-
-        <article className={styles.card}>
-          <span>02</span>
-          <h2>Einordnung</h2>
-          <p>Keine Hype Sprache. Keine falschen Proof Aussagen. Nur belastbare Beschreibung.</p>
-        </article>
-
-        <article className={styles.card}>
-          <span>03</span>
-          <h2>Investorensicht</h2>
-          <p>Verdichtete Darstellung für Kontaktaufnahme, Prüfung und strategische Bewertung.</p>
-        </article>
+        {data.signals.map((signal, index) => (
+          <article className={styles.signalCard} key={signal}>
+            <span>0{index + 1}</span>
+            <h2>{signal}</h2>
+            <p>
+              Freigegebene Außenkommunikation ohne Rohdaten, ohne private Notizen
+              und ohne unnötige technische Offenlegung.
+            </p>
+          </article>
+        ))}
       </section>
 
       <section className={styles.report}>
-        <div className={styles.reportTop}>
-          <span>Öffentliche Tätigkeit</span>
-          <strong>Freigegebene Reportation</strong>
+        <div className={styles.reportHead}>
+          <div>
+            <span>Öffentliche Tätigkeit</span>
+            <h2>Freigegebene Reportation</h2>
+          </div>
+          <p>{data.protection}</p>
         </div>
 
-        <div className={styles.text}>
+        <div className={styles.textGrid}>
           {blocks.map((block, index) => (
-            <p key={index}>{block}</p>
+            <article className={styles.textBlock} key={index}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <p>{block}</p>
+            </article>
           ))}
         </div>
       </section>
